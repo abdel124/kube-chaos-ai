@@ -1,0 +1,61 @@
+[
+  {
+    "timestamp": "2025-06-12T06:33:22.030304",
+    "scenario": "scenarios/generated_2025-06-11T23:33:21.yaml",
+    "issues": [
+      {
+        "pod": "threat-dashboard-7cfd5985d8-8v985",
+        "namespace": "llm-platform",
+        "reason": "CrashLoopBackOff"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-14T16:39:40.344299",
+    "scenario": "scenarios/generated_2025-06-14T09:39:39.yaml",
+    "issues": [
+      {
+        "pod": "threat-dashboard-7cfd5985d8-8v985",
+        "namespace": "llm-platform",
+        "reason": "CrashLoopBackOff"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-14T16:43:05.974203",
+    "scenario": "scenarios/generated_2025-06-14T09:43:05.yaml",
+    "issues": [
+      {
+        "pod": "my-deployment-5c9cb7f65-njxw7",
+        "namespace": "default",
+        "reason": "ErrImagePull"
+      },
+      {
+        "pod": "threat-dashboard-7cfd5985d8-8v985",
+        "namespace": "llm-platform",
+        "reason": "CrashLoopBackOff"
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-06-14T16:48:25.483854",
+    "scenario": "scenarios/generated_2025-06-14T09:48:24.yaml",
+    "issues": [
+      {
+        "pod": "my-deployment-5c9cb7f65-njxw7",
+        "namespace": "default",
+        "reason": "ImagePullBackOff"
+      },
+      {
+        "pod": "my-deployment-cf87947f-2hkr9",
+        "namespace": "default",
+        "reason": "ImagePullBackOff"
+      },
+      {
+        "pod": "threat-dashboard-7cfd5985d8-8v985",
+        "namespace": "llm-platform",
+        "reason": "CrashLoopBackOff"
+      }
+    ]
+  }
+]
