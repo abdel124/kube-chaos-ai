@@ -495,5 +495,41 @@
         "reason": "CrashLoopBackOff"
       }
     ]
+  },
+  {
+    "timestamp": "2025-06-15T18:41:17.168155",
+    "scenario": "scenarios/generated_2025-06-15T11:41:16.yaml",
+    "issues": [
+      {
+        "pod": "hello-world-554495fd87-8qk7x",
+        "namespace": "default",
+        "reason": "CrashLoopBackOff"
+      },
+      {
+        "pod": "hello-world-554495fd87-dkpp8",
+        "namespace": "default",
+        "reason": "CrashLoopBackOff"
+      },
+      {
+        "pod": "my-deployment-84b4dfb49b-9t92m",
+        "namespace": "default",
+        "reason": "ImagePullBackOff"
+      },
+      {
+        "pod": "my-deployment-84b4dfb49b-mdh6m",
+        "namespace": "default",
+        "reason": "ImagePullBackOff"
+      },
+      {
+        "pod": "my-deployment-84b4dfb49b-qdch2",
+        "namespace": "default",
+        "reason": "ImagePullBackOff"
+      },
+      {
+        "pod": "threat-dashboard-7cfd5985d8-8v985",
+        "namespace": "llm-platform",
+        "reason": "CrashLoopBackOff"
+      }
+    ]
   }
 ]

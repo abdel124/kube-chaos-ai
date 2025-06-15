@@ -1,0 +1,49 @@
+# Bytecode & Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Logs and history
+logs/
+*.log
+.history/
+
+# Secrets
+.env
+.env.*
+
+# Kubernetes files generated dynamically
+scenarios/
+*.yaml
+
+# Python virtual environments
+venv/
+.venv/
+
+# Jupyter Notebooks (if used later)
+.ipynb_checkpoints/
+
+# FastAPI/uvicorn specific
+*.sqlite
+*.db
+
+# Frontend node_modules and build artifacts
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.next/
+frontend/dist/
+frontend/.turbo/
+frontend/.vite/
+
+# IDE and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Docker
+*.pid
+*.tar
+docker-compose.override.yml
