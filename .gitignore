@@ -47,3 +47,17 @@ frontend/.vite/
 *.pid
 *.tar
 docker-compose.override.yml
+
+# === Terraform ===
+*.tfstate
+*.tfstate.backup
+*.tfplan
+*.tfvars
+.terraform/
+.crash/
+terraform.tfstate.*
+terraform.tfvars.json
+override.tf
+override.tf.json
+*.auto.tfvars
+*.auto.tfvars.json
