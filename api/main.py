@@ -7,8 +7,18 @@ from ai_generator.generator import generate_yaml
 from failure_injector.injector import apply_manifest
 from health_checker.checker import detect_crashloop
 from utils.logger import log_scenario
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3001"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 HISTORY_FILE = "logs/history.json"
 
