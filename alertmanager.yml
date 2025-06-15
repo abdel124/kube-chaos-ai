@@ -1,0 +1,17 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: slack-notifications
+  group_wait: 10s
+  group_interval: 30s
+  repeat_interval: 1h
+
+receivers:
+  - name: slack-notifications
+    slack_configs:
+      - send_resolved: true
+        text: '{{ range .Alerts }}🔥 *{{ .Annotations.summary }}* — {{ .Labels.reason }} in namespace *{{ .Labels.namespace }}*{{ end }}'
+        username: 'kube-chaos-ai'
+        channel: '#devopscicd'
+        api_url: 'https://hooks.slack.com/services/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'

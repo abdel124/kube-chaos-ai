@@ -1,4 +1,5 @@
 import subprocess
+import time
 from health_checker.checker import detect_crashloop
 from ai_generator.generator import generate_yaml
 from utils.logger import log_scenario
@@ -31,5 +32,6 @@ if __name__ == "__main__":
             print(f"Pod: {issue['pod']} | NS: {issue['namespace']} | Reason: {issue['reason']}")
     else:
         print("✅ No issues detected.")
+    time.sleep(30)
 
     log_scenario(path, issues)
